@@ -9,6 +9,19 @@
 # gcc version check
 gcc --version
 
+# Install the ruby
+
+ruby --version
+gem --version
+
+gem install bundler
+
+gem install rspec
+
+# Command to test the unit test case
+
+rspec main_spec.rb
+
 ```
 
 ## Setting up REPL
@@ -70,10 +83,12 @@ insert foo bar 1
 
 -- Syntax error. Could not parse statement.
 
-
 ```
+
+
 
 ## Reference link
 
 - [Build your own link](https://github.com/codecrafters-io/build-your-own-x.git)
 - [Set up gcc for vscode](https://code.visualstudio.com/docs/cpp/config-mingw)
+- [Ruby Installer](https://rubyinstaller.org/downloads/)
