@@ -43,10 +43,14 @@ gcc --version
 - Create the sql command processor
 - The “front-end” of sqlite is a SQL compiler that parses a string and outputs an internal representation called bytecode
 - The byte code will be passed into the virtual machine
- 
- {% include image.html url="/images/arch2.jpg" description="SQLite Architecture (https://www.sqlite.org/arch.html)" %}
 
+{% include image.html url="/images/arch2.jpg" description="SQLite Architecture (source: <https://www.sqlite.org/arch.html>)" %}
 
+- Breaking things into two steps like this has a couple advantages:
+  - Reduces the complexity of each part (e.g. virtual machine does not worry about syntax errors)
+  - Allows compiling common queries once and caching the bytecode for improved performance
+
+  
 
 ## Reference link
 
