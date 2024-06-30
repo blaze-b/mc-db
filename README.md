@@ -63,7 +63,7 @@ rspec main_spec.rb
   - Reduces the complexity of each part (e.g. virtual machine does not worry about syntax errors)
   - Allows compiling common queries once and caching the bytecode for improved performance
 
-````sql
+```sql
 
 insert 1 cstack foo@bar.com
 
@@ -84,8 +84,6 @@ insert foo bar 1
 -- Syntax error. Could not parse statement.
 
 ```
-
-
 
 ## Reference link
 
