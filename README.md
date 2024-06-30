@@ -50,7 +50,28 @@ gcc --version
   - Reduces the complexity of each part (e.g. virtual machine does not worry about syntax errors)
   - Allows compiling common queries once and caching the bytecode for improved performance
 
-  
+````sql
+
+insert 1 cstack foo@bar.com
+
+-- Executed.
+
+insert 2 bob bob@example.com
+
+-- Executed.
+
+select
+
+-- (1, cstack, foo@bar.com)
+-- (2, bob, bob@example.com)
+-- Executed.
+
+insert foo bar 1
+
+-- Syntax error. Could not parse statement.
+
+
+```
 
 ## Reference link
 
