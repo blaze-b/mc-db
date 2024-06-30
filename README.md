@@ -38,6 +38,16 @@ gcc --version
   - os interface
     - It is the layer that differs depending on which operating system sqlite was compiled for.
 
+## Creating the compiler and virtual machine
+
+- Create the sql command processor
+- The “front-end” of sqlite is a SQL compiler that parses a string and outputs an internal representation called bytecode
+- The byte code will be passed into the virtual machine
+ 
+ {% include image.html url="/images/arch2.jpg" description="SQLite Architecture (https://www.sqlite.org/arch.html)" %}
+
+
+
 ## Reference link
 
 - [Build your own link](https://github.com/codecrafters-io/build-your-own-x.git)
