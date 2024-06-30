@@ -85,6 +85,10 @@ insert foo bar 1
 
 ```
 
+## [First test addition](https://cstack.github.io/db_tutorial/parts/part4.html)
+
+- Use rspec to generate the IT tests.
+
 ## Reference link
 
 - [Build your own link](https://github.com/codecrafters-io/build-your-own-x.git)
